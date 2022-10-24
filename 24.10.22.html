@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #wynik{
+                height: 200px;
+                
+            }
+        </style>
+        <script>
+            function zaladowano(){
+                const a=3;
+                const b=4;
+                let c=a+b;
+                let x ="5"+"5"
+                document.getElementById('wynik').innerHTML += x +"<br>";
+                let dni=["Pn","Wt","Śr","Czw","Pt","Sb","Niedziela"]
+                for(i=0;i<7;i+=2){
+                document.getElementById('wynik').innerHTML += dni[i]+"<br>";
+                }
+                
+                /*document.getElementById('wynik').innerHTML += dni[1]+"<br>";
+                document.getElementById('wynik').innerHTML += dni[2]+"<br>";
+                document.getElementById('wynik').innerHTML += dni[3]+"<br>";
+                document.getElementById('wynik').innerHTML += dni[4]+"<br>";
+                document.getElementById('wynik').innerHTML += dni[5]+"<br>";
+                document.getElementById('wynik').innerHTML += dni[6]+"<br>";*/
+                return c
+            }
+        </script>
+    </head>
+    <body onload="zaladowano()">
+        <div id="wynik"> "5"+"5"=</div>  
+    </body>
+</html>
